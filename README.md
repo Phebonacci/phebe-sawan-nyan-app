@@ -1,3 +1,16 @@
+# Phebe Sawan's Cat Browser App
+
+This is Phebe Sawan's attempt at the Cat Browser App using `react-bootsrap`.
+
+## This could've been better
+
+- Better and more consistent folder structure.
+- Better naming convention of models and components.
+- More generic and reusable components, e.g, `<CatsList />`
+- Better test coverage, e.g, on click of the Load more button.
+- Better encapsulation of the axios http client, e.g, encapsulating the `AxiosInstance` type [??]
+- Fix for a bug with the Load more button when there are exactly 10 cats under the selected breed. Should've taken quotient into account.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
