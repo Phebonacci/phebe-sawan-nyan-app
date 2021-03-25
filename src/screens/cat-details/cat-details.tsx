@@ -35,7 +35,7 @@ export const CatDetails: React.FC = () => {
         .catch(() => {
           if (cancel) return;
           setLoadingCatDetails(false);
-          setErrorMessage('We failed to load the cat details. Pls try again later.');
+          setErrorMessage('Apologies but we could not load the cat details for you at this time. Miau!');
         });
     }
 

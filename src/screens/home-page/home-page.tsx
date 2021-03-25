@@ -38,7 +38,7 @@ export const HomePage: React.FC = () => {
 
   useEffect(() => {
     if (catBreeds.status === 'failed') {
-      setErrorMessage('We failed to load the cat breeds. Pls try again later.');
+      setErrorMessage('Apologies but we could not load new cats for you at this time! Miau!');
     } else if (catsLookup.errorMessage) {
       setErrorMessage(catsLookup.errorMessage);
     }

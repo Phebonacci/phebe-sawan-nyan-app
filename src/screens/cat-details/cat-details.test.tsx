@@ -54,6 +54,6 @@ describe('<CatDetails />', () => {
       get: jest.fn().mockRejectedValue(new Error('Failed to fetch')),
     } as unknown) as AxiosInstance);
     const { findByText } = render(<CatDetails />);
-    await findByText('We failed to load the cat details. Pls try again later.');
+    await findByText('Apologies but we could not load the cat details for you at this time. Miau!');
   });
 });

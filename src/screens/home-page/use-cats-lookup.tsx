@@ -58,7 +58,7 @@ export const useCatsLookup = ({ limit = 10 } = {}): CatsLookupHook => {
         .catch(() => {
           if (cancel) return;
           setLoading(false);
-          setErrorMessage('We failed to load the cats. Pls try again.');
+          setErrorMessage('Apologies but we could not load new cats for you at this time! Miau!');
         });
     } else {
       setCats([]);

@@ -83,7 +83,7 @@ describe('<HomePage />', () => {
     const { queryByLabelText, queryByText } = render(<HomePage />);
     expect(queryByLabelText('Breed')).toBeVisible();
     expect(queryByLabelText('Breed')).toBeDisabled();
-    expect(queryByText('We failed to load the cat breeds. Pls try again later.')).toBeVisible();
+    expect(queryByText('Apologies but we could not load new cats for you at this time! Miau!')).toBeVisible();
   });
 
   it('renders the list of cats given the selected breed', () => {

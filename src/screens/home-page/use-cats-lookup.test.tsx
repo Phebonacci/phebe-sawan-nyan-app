@@ -86,7 +86,9 @@ describe('useCatsLookup', () => {
     await act(async () => {
       result.current.loadCats('aaa');
     });
-    expect(result.current.errorMessage).not.toBeNull();
+    expect(result.current.errorMessage).toStrictEqual(
+      'Apologies but we could not load new cats for you at this time! Miau!',
+    );
   });
 
   describe('canLoadMore', () => {
