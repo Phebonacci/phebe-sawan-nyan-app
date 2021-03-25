@@ -31,8 +31,10 @@ export const HomePage: React.FC = () => {
   };
 
   useEffect(() => {
-    catsLookup.loadCats(query.get('breed') ?? '');
-  }, []);
+    if (query.get('breed') !== catsLookup.currentFilter) {
+      catsLookup.loadCats(query.get('breed') ?? '');
+    }
+  }, [query, catsLookup]);
 
   useEffect(() => {
     if (catBreeds.status === 'failed') {
