@@ -1,0 +1,9 @@
+.cats-list-root {
+  padding: 0;
+  & .row {
+    margin: 0 -30px;
+  }
+  & .card {
+    margin: 16px 0;
+  }
+}
