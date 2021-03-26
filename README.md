@@ -10,6 +10,8 @@ This is Phebe Sawan's attempt at the Cat Browser App using `react-bootsrap`.
 - Better test coverage, e.g, on click of the Load more button.
 - Better encapsulation of the axios http client, e.g, encapsulating the `AxiosInstance` type [??]
 - Fix for a bug with the Load more button when there are exactly 10 cats under the selected breed. Should've taken quotient into account.
+- Prettier integration.
+- More robust eslint rules.
 
 # Getting Started with Create React App
 
